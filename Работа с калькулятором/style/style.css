@@ -1,0 +1,52 @@
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+  background-color: black;
+}
+
+.films {
+    display: flex;
+    margin-left: -20%;
+    width: 100px;
+}
+
+img {
+    margin: 30px;
+    width: 100%;
+    transition: 1s;
+    border: 1px solid yellow;
+}
+img:hover {
+    rotate: 540deg;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 1px 0px 50px rgb(255, 206, 8);
+    transform:scaleY(-100%);
+    transition: 1s;
+}
+
+table {
+    border: 1px solid yellow;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid yellow;
+    text-align: center;
+}
+
+a {
+    color: yellow;
+    border: 1px solid yellow;
+      padding: 10px;
+      border-radius: 16px;
+}
+
+a:hover {
+    background-color: yellow;
+    color: black;
+}

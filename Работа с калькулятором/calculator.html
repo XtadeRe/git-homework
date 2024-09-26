@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="./style/style.css">
+	<title>Калькулятор</title>
+</head>
+<body>
+	<center>
+	<input id="num1" />
+
+
+	<div id="btns">
+	  <button id="plus" onclick="op='+'">+</button>
+	  <button id="minus" onclick="op='-'">-</button>
+	  <button id="times" onclick="op='*'">x</button>
+	  <button id="divide" onclick="op='/'">:</button>
+	</div>
+
+	<div id="Vibor">
+		<p id="znak" script="plus()">_</p>
+	</div>
+
+
+	<input id="num2" />
+	<br>
+
+
+	<button onclick="func()">Посчитать</button>
+
+
+	<p id="result"></p>
+	</center>
+	<script>
+	  var op; 
+
+	  function func() {
+	    var result;
+	    var num1 = Number(document.getElementById("num1").value);
+	    var num2 = Number(document.getElementById("num2").value);
+        
+	    switch (op) {
+	      case '+':
+	        result = num1 + num2;
+			document.getElementById('znak').innerHTML = 'Плюс';
+	        break;
+	      case '-':
+	        result = num1 - num2;
+			document.getElementById('znak').innerHTML = 'Минус';
+	        break;
+	      case '*':
+	        result = num1 * num2;
+			document.getElementById('znak').innerHTML = 'Умножить';
+	        break;
+	      case '/':
+	        result = num1 / num2;
+			document.getElementById('znak').innerHTML = 'Делить';
+	        break;
+	    }
+
+		function plus() {
+			document.getElementById('znak').innerHTML = 'plus';
+		}
+		function minus() {
+
+		}
+		function x() {
+
+		}
+		function delit() {
+
+		}
+
+
+
+	    document.getElementById("result").innerHTML = result;
+	  }
+	</script>
+
+</body>
+</html>
