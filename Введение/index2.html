@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" id="inp1">
+    <input type="number" name="" id="inp2">
+    <button id="btn">Вывести</button>
+    <p id="result"></p>
+</body>
+
+<script>
+    var inp1 = document.getElementById("inp1");
+    var inp2 = document.getElementById("inp2");
+    var result = document.getElementById("result");
+
+
+    function func() {
+        var val1 = +inp1.value; 
+        var val2 = +inp2.value; 
+
+        if (val1 > val2) {
+            result.innerHTML = val1;
+        } else {
+            result.innerHTML = val2;
+        }
+    }
+
+    document.getElementById("btn").addEventListener("click", func);
+</script>
+</html>
