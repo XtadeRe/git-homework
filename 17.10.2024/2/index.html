@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+   
+let R = [];
+let hello = 0;
+
+
+for (let i = 1; i <= 11; i++) {
+    let input = prompt(`Введите строку ${i}:`);
+    R.push(input.toLowerCase());
+}
+
+document.write(R);
+
+for (let j = 0; j < R.length; j++) {
+    if (R[j].includes("hello")) {
+        hello++;
+    }
+}
+document.write('<br>' + 'количество hello: ' + hello);
+
+let element11 = R[10].slice(0, 2)
+document.write('<br>' + 'Первые два символа 11 элемента массива: ' + element11);
+
+let element3 = R[2].slice(-3)
+document.write('<br>' + 'Последние 3 символа 3 элемента массива: ' + element3);
+</script>
+</html>

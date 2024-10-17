@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+function palindrome(str) {
+
+    const cleanedStr = str.toLowerCase();
+
+    return cleanedStr === cleanedStr.split('').reverse().join('');
+}
+
+
+document.write(palindrome('Anna') + "<br>");
+document.write(palindrome('Never, odd or even') + "<br>");
+document.write(palindrome('More work?'));
+
+</script>
+</html>
